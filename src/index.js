@@ -1,11 +1,25 @@
-// index.js
+import "./reset.css"
 import "./styles.css"
-import { greeting } from "./greeting.js";
 
-import odinImage from "./odin.png";
+import populateHomepage from "./homepage.js"
+import populateMenu from "./menu.js"
+import populateContact from "./contact.js"
 
-const image = document.createElement("img");
-image.src = odinImage;
+const contentNode = document.querySelector("#content")
 
-document.body.appendChild(image);
-console.log(greeting);
+const homeBtn = document.querySelector("#home")
+homeBtn.addEventListener("click", ()=>{
+	contentNode.innerHTML = ""
+	populateHomepage()
+})
+const menuBtn = document.querySelector("#menu")
+menuBtn.addEventListener("click", ()=>{
+	contentNode.innerHTML = ""
+	populateMenu()
+})
+const contactBtn = document.querySelector("#contact")
+contactBtn.addEventListener("click", ()=>{
+	contentNode.innerHTML = ""
+	populateContact()
+})
+
