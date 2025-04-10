@@ -162,13 +162,14 @@ header {
 					p:first-child {
 						width: 50px;
 						/* outline: 1px solid red; */
+						text-align: right;
 					}
 				}
 
 				.connectline {
 					width: 100px;
 					height: 0px;
-					border: 1px solid var(--grey-text);
+					border-top: 1px solid var(--grey-text);
 					transform: translateY(-8px);
 					position: relative;
 
@@ -177,7 +178,7 @@ header {
 						width: 10px;
 						height: 10px;
 						border-radius: 50%;
-						background-color: var(--grey-text);	
+						border: 1px solid var(--grey-text);
 						position: absolute;
 						transform: translate(-100%, -50%);
 					}
@@ -186,7 +187,7 @@ header {
 						width: 10px;
 						height: 10px;
 						border-radius: 50%;
-						background-color: var(--grey-text);	
+						border: 1px solid var(--grey-text);
 						position: absolute;
 						right: 0;
 						transform: translate(100%, -50%);
